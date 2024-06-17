@@ -1,0 +1,292 @@
+# Blender 4.1.1 MTL File: 'bits map file.blend'
+# www.blender.org
+
+newmtl ASPHALT_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Asphalt010/Asphalt010_Color.png
+
+newmtl BUILDING_DEFAULT_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Plaster002/Plaster002_Color.jpg
+
+newmtl CONCRETE_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Concrete034/Concrete034_Color.jpg
+
+newmtl EARTH_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Ground042/Ground042_Color.jpg
+
+newmtl GRASS_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Ground003/Ground003_Color.jpg
+
+newmtl KERB_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/KnerrKerb0001.png
+
+newmtl MAT_0_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Plaster002/Plaster002_Color.jpg
+
+newmtl MAT_0_1
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/MarekCompositeWall00001_transparent.png
+
+newmtl MAT_1_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Plaster002/Plaster002_Color.jpg
+
+newmtl MAT_2_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/RoofingTiles010/RoofingTiles010_Color.jpg
+
+newmtl MAT_3_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/RoofingTiles010/RoofingTiles010_Color.jpg
+
+newmtl MAT_4_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Concrete034/Concrete034_Color.jpg
+
+newmtl MAT_5_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Concrete034/Concrete034_Color.jpg
+
+newmtl MAT_6_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Plaster002/Plaster002_Color.jpg
+
+newmtl MAT_6_1
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/MarekCompositeWall00001_transparent.png
+
+newmtl MAT_7_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/RoofingTiles010/RoofingTiles010_Color.jpg
+
+newmtl PITCH_SOCCER_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/Grass-2048.JPG
+
+newmtl PITCH_SOCCER_1
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/pitchSoccer.png
+
+newmtl PITCH_TENNIS_CLAY_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/clay.jpg
+
+newmtl PITCH_TENNIS_CLAY_1
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/pitchTennis.png
+
+newmtl PLASTIC_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Plastic010/Plastic010_Color.jpg
+
+newmtl PURIFIED_WATER_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.501961
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+
+newmtl ROAD_MARKING_DASHED_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Asphalt010/Asphalt010_Color.png
+
+newmtl ROAD_MARKING_DASHED_1
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/road_marking_dash.png
+
+newmtl ROOF_DEFAULT_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/RoofingTiles010/RoofingTiles010_Color.jpg
+
+newmtl STEEL_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/cc0textures/Metal002/Metal002_Color.jpg
+
+newmtl TENNIS_NET_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/tennis_net.png
+map_d /home/vimarsh/Downloads/OSM2World-latest-bin/textures/tennis_net.png
+
+newmtl TREE_BILLBOARD_BROAD_LEAVED_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/arbaro_tree_broad_leaved.png
+map_d /home/vimarsh/Downloads/OSM2World-latest-bin/textures/arbaro_tree_broad_leaved.png
+
+newmtl TREE_BILLBOARD_CONIFEROUS_0
+Ns 92.156860
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 1
+map_Kd /home/vimarsh/Downloads/OSM2World-latest-bin/textures/arbaro_tree_coniferous.png
+map_d /home/vimarsh/Downloads/OSM2World-latest-bin/textures/arbaro_tree_coniferous.png

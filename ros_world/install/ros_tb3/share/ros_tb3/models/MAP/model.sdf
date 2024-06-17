@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="custom_object">
+    <static>true</static>
+    <!-- <pose>0 0 0 -1.5708 0 0</pose> -->
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://MAP/meshes/bits_osm_3d.obj</uri>
+            <scale>0.01 0.01 0.01</scale> <!-- Scaling the model -->
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://MAP/meshes/bits_osm_3d.obj</uri>
+            <scale>0.01 0.01 0.01</scale> <!-- Scaling the model -->
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
