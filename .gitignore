@@ -1,3 +1,4 @@
 ros_world/build/*
 ros_world/log/*
 roads.svg
+ros_world/install/*
