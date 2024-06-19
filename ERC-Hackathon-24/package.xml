@@ -1,0 +1,20 @@
+<package format="3">
+  <name>ERC-Hackathon-24</name>
+  <version>0.0.0</version>
+  <description>Package for ERC ROS2 Hackathon 2024</description>
+  <maintainer email="ritwiksha2027@gmail.com">Ritwik</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+  <exec_depend>turtlebot3_teleop</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
