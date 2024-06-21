@@ -4,7 +4,7 @@
 This repository contains all of the instructions and files required to solve the Electronics and Robotics Club's Hackathon 2024.<br><br>
 The hackathon is focused on the design of an **Autonomous Electric Faliure Detection and Repair Robot**. Your team has to provide a solution consisting of the mechanical design, electronics interfacing and an implementation of autonomous behavior. All three tasks are linked to the same final goal and yet can be completed independently.<br><br>
 The registration form link can be found [here](https://forms.gle/wjGYFgRjN8xn6po36).<br><br>
-The tentative deadline for submission is **11:59 P.M.** on **21st August**<br><br>
+The tentative deadline for submission is **11:59 P.M.** on **1st August**<br><br>
 In case of any queries contact:<br><br>
 Parth Shah: 7021992504<br>
 Ritwik Sharma: 9999326476<br>
