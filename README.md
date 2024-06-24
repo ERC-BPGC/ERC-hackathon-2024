@@ -13,7 +13,7 @@ Vimarsh Shah: 8200096029<br>
 Ansh Parmeshwar: 7208771691
 
 
-#### Teams with complete submissions will be inducted into ERC!
+#### Teams/Individuals with complete submissions will be inducted into ERC!
 ___
 
 ## Problem Statement
