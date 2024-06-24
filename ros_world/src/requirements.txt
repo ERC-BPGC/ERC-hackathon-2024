@@ -1,1 +1,3 @@
-shapely
+opencv-python
+matplotlib
+numpy

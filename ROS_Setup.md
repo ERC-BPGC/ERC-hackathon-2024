@@ -3,29 +3,26 @@
 
 Instructions to setup your environment is divided into following broad sections:
 
-1. Setting up the environment itself (Installing Ubuntu 22 or equivalent)
+1. Setting up the environment itself (installing Ubuntu 22 or equivalent)
 2. Setting up ROS2 (we recommend using Humble)
 3. Setting up Turtlebot3 and its other packages
 
-===
 
 
-## Setting up Your environemnt
+## Setting up Your environment
 
-#### Recommended
+### Recommended
 
-We recommend to use Ubuntu 22 - you do not need to remove Windows. You can dual boot Ubuntu 22.04 by [following these instructions](https://www.xda-developers.com/dual-boot-windows-11-linux/). You can download the Ubuntu 22 Desktop image from [here](https://releases.ubuntu.com/jammy/).
+We recommend using **Ubuntu 22** - you do not need to remove Windows. You can dual boot Ubuntu 22.04 by [following these instructions](https://www.xda-developers.com/dual-boot-windows-11-linux/). You can download the Ubuntu 22 Desktop image from [here](https://releases.ubuntu.com/jammy/).
 
-#### Altenative (using Windows Sunsystem for Linux)
+### Alternative (using Windows Subsystem for Linux)
 
-This approach uses [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about) to run any Linux distro on your windows machine itself.
+This approach uses [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about) to run any Linux distro on your Windows machine itself.
 
-Open Powershell on your windows machine and run
+Open PowerShell on your Windows machine and run
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-
-To determine if WSL 2 is enabled on your machine using both PowerShell and the DISM command, follow these steps:
 
 Open PowerShell with administrative privileges.
 Enter the following command and press Enter:
@@ -36,32 +33,24 @@ If WSL 2 is enabled, you’ll see output similar to:
 ```
 FeatureName : VirtualMachinePlatform
 ```
-Additionally, you can use the DISM command to check:
-```
-dism.exe /online /get-features | Where-Object { $_ -match "Microsoft-Windows-Subsystem-Linux" }
-```
-Output:
-```
-Feature Name : Microsoft-Windows-Subsystem-Linux
-```
-Or you can simply go to ‘Turn Windows features on or off‘ in your Windows settings to verify if the Windows Subsystem for Linux is enabled.
+Or, you can simply go to ‘Turn Windows features on or off‘ in your Windows settings to verify if the Windows Subsystem for Linux is enabled.
 
 
 To install Ubuntu 22
 ```
 wsl --update
-wsl --list --online 
+wsl --list --online
 ```
 Then install Ubuntu 22.04
 ```
 wsl --install -d Ubuntu-22.04
 ```
-Upon installation follow the instructions and create a username and password for your Ubuntu install. You can now launch Ubuntu via simply searching in start menu or from Windows Terminal.
+Upon installation, follow the instructions and create a username and password for your Ubuntu install. You can now launch Ubuntu via simply searching in start menu or from Windows Terminal.
 
 
-#### Alternative (using docker and distrobox to get Ubuntu 22)
+### Alternative (using docker and distrobox to get Ubuntu 22)
 
-// Least recommended - Recommended if you want to try variety of distros and have expirience with docker
+// Least recommended - Recommended if you want to try a variety of distros and have experience with docker
 
 Ensure Docker is installed on your Ubuntu 20.04 system. If not installed, you can install it using:
 (If on a debian based machine)
@@ -84,71 +73,60 @@ distrobox enter ubuntu22
 ```
 
 
-The following are the system requirements for simulating the automation task:
-1. Linux (Ubuntu 20.04 [dual boot](https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/) recommended. Refer to problem statement for alternatives.)
-2. [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu#Ubuntu_install_of_ROS_Noetic)
-- It is recommended that you install ```ros-noetic-desktop-full``` as it also installs other required packages along with it
-3. Gazebo (Not required separately if you have installed ```ros-noetic-desktop-full```)<br>
+## Setting up ROS2
+
+> We recommend using ROS2 Humble
+
+Steps to install ROS2 Humble on Ubuntu 22 [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
+
+Make sure to do Full Desktop install: `sudo apt install ros-humble-desktop-full`
+
+Installing Gazebo (Not required separately if you have installed ```ros-humble-desktop-full```)
+
 To verify, use this command:
 ```
 gazebo --version
 ```
-If you are able to see the version, Gazebo is installed.<br><br>
-4. TurtleBot3 [Setup manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/) (**NOTE:** Change kinetic to noetic if you follow the instructions in the link)<br>
+If you are able to see the version, Gazebo is installed.
+
+
+It is **highly recommended** to go through all [tutorials](https://docs.ros.org/en/humble/Tutorials.html) on ROS2's website as that will give a very good grasp on what is ROS and how does it work.
+
+## Setting up Turtlebot3
+
+(**NOTE:** Change kinetic **to humble** if you follow the instructions in these links)
+
+**Ensure** you go through turtlebot's normal [setup instructions](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/) before following the below. Also do build the package from source as shown in drop down on the website as it will prevent a lot of errors.
+
+Next follow turtlebot3's [Setup manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/)
+
+We will be using the `waffle_pi` model.
 <br>
 
-#### Detailed setup instructions for turtlebot3: 
-Run the following commands sequentially 
-<br>
-**Install dependent packages:**
-```
-sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
-ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
-ros-noetic-rgbd-launch ros-noetic-depthimage-to-laserscan \
-ros-noetic-rosserial-arduino ros-noetic-rosserial-python \
-ros-noetic-rosserial-server ros-noetic-rosserial-client \
-ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
-ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-ros-noetic-compressed-image-transport ros-noetic-rqt* \
-ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
-```
-<br>
+### Alternatively
 
-**Install turtlebot3:**
+You can run the following [script](https://gist.github.com/vimarsh244/ba9adf6ae3a298180aa85adfe15193f5) in your terminal window. This will setup ROS2, Gazebo and Turtlebot for you completely. [Instructions](https://gist.github.com/vimarsh244/ba9adf6ae3a298180aa85adfe15193f5?permalink_comment_id=5099679#gistcomment-5099679) to use the script.
+
+## Automation task package
+Clone this repository in to your machine or ros workspace.
 ```
-sudo apt-get install ros-noetic-dynamixel-sdk
+cd ~/ros_ws/src/
+```
+```
+git clone https://github.com/ERC-BPGC/ERC-hackathon-2024.git
 ```
 
-```
-sudo apt-get install ros-noetic-turtlebot3-msgs
-```
-```
-sudo apt-get install ros-noetic-turtlebot3
-```
-<br>
+The ROS package ```ros_world``` contains all the files required for this task<br>
+This completes the environment setup for the automation task.
 
-**Install turtlebot3 simulation package:**<br>
-Navigate to your catkin workspace source folder
-```
-cd ~/catkin_ws/src/
-```
-Clone the turtlebot3_simulations repo:
-```
-git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-```
-Build your workspace (Note: Most resources including the book by Morgan Quigley use catkin_make instead of catkin build, but make sure you use catkin build instead) 
-```
-cd ~/catkin_ws && catkin build
-```
-<br><br>
-**Automation task package**<br>
-Clone this repository in your catkin workspace source folder.
-```
-cd ~/catkin_ws/src/
-```
-```
-git clone https://github.com/ERC-BPGC/ERC-hackathon-2023.git
-```
+Make sure you have all environment variables in your `.bashrc` and have sourced the file. `source ~/.bashrc`. You can check that it is configured properly by making sure that [these lines](https://gist.github.com/vimarsh244/ba9adf6ae3a298180aa85adfe15193f5?permalink_comment_id=5099676#gistcomment-5099676) are available.
 
-The ROS package ```ros_world``` contains all the files required for this task<br> 
-This completes the environment setup for the autonmation task.
+You can create a symlink for ros_world in your workspace.
+
+First build the workspace
+
+```colcon build```
+
+Then Launch the Gazebo world by entering
+
+```ros2 launch ros_world robo.launch.py```

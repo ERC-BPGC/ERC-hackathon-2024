@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 import matplotlib.pyplot as plt
-from shapely.geometry import LineString, Point
 import cv2
-
 
 
 ########################################################################################
@@ -13,8 +11,7 @@ import cv2
 
 ########################################################################################
 
-
-
+# Some example coordinates
 # ERC Room : (1248, 312)
 # INS : (1068, 394)
 # Smokers : (682, 477)
