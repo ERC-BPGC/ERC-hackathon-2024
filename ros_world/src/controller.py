@@ -1,6 +1,6 @@
 ########################################################################################################
 
 # Wassup! This is where your controller code goes for the Automation Task of the ERC Hackathon '24
-#                                       Don't Lose Control!!!
+#                                      ( Don't ) Lose Control!!!
 
 ########################################################################################################
