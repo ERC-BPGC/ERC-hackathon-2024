@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import matplotlib.pyplot as plt
+from shapely.geometry import LineString, Point
 import cv2
+
 
 
 ########################################################################################
@@ -11,10 +13,11 @@ import cv2
 
 ########################################################################################
 
-# Some example coordinates
-# ERC Room : (1248, 312)
-# INS : (1068, 394)
-# Smokers : (682, 477)
+
+
+# Some points for reference and testing
+# ERC Room : (85, 367)
+# Smokers : (139, 647)
 
 
 
@@ -78,4 +81,11 @@ class Maze:
 
         cv2.imshow("Planned Path", self.display_img)
         cv2.waitKey(0)
+
+    
+    # Function to transform coordinates from opencv image to Gazebo simulation coordinate frame
+    def point_transform(self, pnt):
+        gazebo_x = (-1 * pnt[1] / 13.002) + 35.7567 + 0.01475
+        gazebo_y = (-1 * pnt[0] / 13.002) + 22.6746 + 0.01475
+        return (gazebo_x, gazebo_y)
         
