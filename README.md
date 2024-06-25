@@ -24,7 +24,7 @@ ___
 
 ## Problem Statement
 
-The detailed problem statement can be found [here](https://docs.google.com/document/d/1SDBllctevOAIbVfmJKIbaY46uG1-VVng/edit?usp=sharing&ouid=102608550481394760401&rtpof=true&sd=true)<br><br>
+The detailed problem statement can be found [here](erc_hackathon_24.pdf)<br><br>
 
 Robotics as a domain can be divided as:<br>
 1. Design (Mechanical and Electronics: What components and sensors is the robot made of)
