@@ -1,5 +1,5 @@
-ros_world/build/*
-ros_world/log/*
+hackathon_automation/build/*
+hackathon_automation/log/*
 roads.svg
-ros_world/install/*
-ros_world/src/__pycache__/*
+hackathon_automation/install/*
+hackathon_automation/src/__pycache__/*

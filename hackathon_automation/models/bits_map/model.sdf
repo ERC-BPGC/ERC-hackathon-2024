@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="BPGC_Map">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bits_map/meshes/cleaned_up_bpgc.dae</uri>
+           <scale>0.05 0.05 0.05</scale> <!-- Scaling the model -->
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

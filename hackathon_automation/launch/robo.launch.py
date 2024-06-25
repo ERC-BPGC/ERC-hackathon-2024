@@ -1,9 +1,9 @@
-
 import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable
+from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 
@@ -18,7 +18,7 @@ def generate_launch_description():
     
 
     world = os.path.join(
-        get_package_share_directory('ros_world'),
+        get_package_share_directory('hackathon_automation'),
         'worlds',
         'MAP.world'
     )
@@ -56,19 +56,31 @@ def generate_launch_description():
         }.items()
     )
     
+    # Publish transform between odom and map on launch
+    static_transform_publisher_cmd = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_transform_publisher',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+    )
+    
     set_env_var = SetEnvironmentVariable(
-            'GAZEBO_MODEL_PATH', (os.path.join(get_package_share_directory('ros_world'),'models'),
+            'GAZEBO_MODEL_PATH', (os.path.join(get_package_share_directory('hackathon_automation'),'models'),
             ':/home/.gazebo/models')
         )
         
+    
+    # To run your own nodes on launching of the simulation, you can add them here    
+    # Add the commands to the launch description
+
 
     ld = LaunchDescription()
 
     ld.add_action(set_env_var)
-    # Add the commands to the launch description
     ld.add_action(gzserver_cmd)
     ld.add_action(gzclient_cmd)
     ld.add_action(robot_state_publisher_cmd)
     ld.add_action(spawn_turtlebot_cmd)
+    ld.add_action(static_transform_publisher_cmd)
 
     return ld

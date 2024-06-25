@@ -54,5 +54,4 @@ We will be using ROS2 for the automation task. It is recomended to use ROS2 - Hu
 
 Follow the complete instructions from [here](ROS_Setup.md).
 
-The ROS package ```ros_world``` contains all the files required for this task<br> 
-This completes the environment setup for the autonmation task.
+The ROS package ```hackathon_automation``` contains all the files required for this task<br> 

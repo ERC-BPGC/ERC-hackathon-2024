@@ -116,12 +116,12 @@ cd ~/ros_ws/src/
 git clone https://github.com/ERC-BPGC/ERC-hackathon-2024.git
 ```
 
-The ROS package ```ros_world``` contains all the files required for this task<br>
+The ROS package ```hackathon_automation``` contains all the files required for this task<br>
 This completes the environment setup for the automation task.
 
 Make sure you have all environment variables in your `.bashrc` and have sourced the file. `source ~/.bashrc`. You can check that it is configured properly by making sure that [these lines](https://gist.github.com/vimarsh244/ba9adf6ae3a298180aa85adfe15193f5?permalink_comment_id=5099676#gistcomment-5099676) are available.
 
-You can create a symlink for ros_world in your workspace.
+You can create a symlink for hackathon_automation in your workspace.
 
 First build the workspace
 
@@ -129,4 +129,6 @@ First build the workspace
 
 Then Launch the Gazebo world by entering
 
-```ros2 launch ros_world robo.launch.py```
+```ros2 launch hackathon_automation robo.launch.py```
+
+This completes the environment setup for the autonmation task.

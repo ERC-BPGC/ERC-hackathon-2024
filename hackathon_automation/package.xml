@@ -1,5 +1,5 @@
 <package format="3">
-  <name>ros_world</name>
+  <name>hackathon_automation</name>
   <version>0.1.1</version>
   <description>BITS Goa Map based turtlebot3 world for ERC Hackathon 2024</description>
   <maintainer email="erc.ic@goa.bits-pilani.ac.in">ERC</maintainer>
