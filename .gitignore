@@ -2,4 +2,4 @@ ros_world/build/*
 ros_world/log/*
 roads.svg
 ros_world/install/*
-__pycache__/*
+ros_world/src/__pycache__/*
