@@ -20,24 +20,6 @@
         <uri>model://bits_map</uri>
         <pose>0 0 0 0 0 0</pose>
       </include>
-      <link name="base_link">
-        <collision name="collision">
-          <geometry>
-            <mesh>
-              <uri>model://bits_map/meshes/model.dae</uri> <!-- Assuming the mesh file is named model.dae -->
-            </mesh>
-          </geometry>
-          <pose>0 0 0 0 0 0</pose>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <mesh>
-              <uri>model://bits_map/meshes/model.dae</uri> <!-- Same mesh file for visual representation -->
-            </mesh>
-          </geometry>
-          <pose>0 0 0 0 0 0</pose>
-        </visual>
-      </link>
     </model>
 
     
