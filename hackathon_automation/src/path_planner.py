@@ -12,12 +12,14 @@
 # import functions from obstacle_detection.py
 
 # Cooridinates of the cones as per the map (image version) - look at get_landmarks.py & obstacle_detection.py
-# ERC Room: 109.95, 296.15
-# Cone 1: 155.93, 205.52
-# Cone 2: 299.81, 142.61
-# Cone 3: 506.77, 536.82
-# Cone 4: 239.65, 643.55
-# Cone 5: 193.79, 329.94
+# ERC Room: 109, 296
+# Cone 1: 155, 205
+# Cone 2: 299, 142
+# Cone 3: 506, 536
+# Cone 4: 239, 643
+# Cone 5: 193, 329
+
+# You can look at the visualization function in demo.py to see how to visualize the path
 
 # These are the coordinates you have to go to in Gazebo
 # Start Location (ERC Room): 12.994061, 14.233000
