@@ -50,7 +50,7 @@ The circuit simulation is to be done using the [TinkerCad](https://www.tinkercad
 
 ### Automation (Perception, Planning and Control)
 
-We will be using ROS2 for the automation task. It is recomended to use ROS2 - Humble as a standard ROS version for this tasak.
+We will be using ROS2 for the automation task. It is recomended to use ROS2 - Humble as a standard ROS version for this task.
 
 Follow the complete instructions from [here](ROS_Setup.md).
 
